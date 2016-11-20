@@ -15,7 +15,7 @@
       } else {
         // if Element is body we need tag name and break out of loop
         if (element.parentNode === element.ownerDocument.documentElement) {
-          selectors.push(element.tagName.toLowerCase());
+          selectors.push(element.nodeName.toLowerCase());
           break;
         }
 
